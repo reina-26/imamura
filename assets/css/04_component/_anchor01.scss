@@ -1,0 +1,42 @@
+.c-anchor01 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item {
+    width: 49%;
+
+    img {
+      width: 100%;
+    }
+
+    &:nth-child(n+ 3) {
+      margin-top: 1em;
+    }
+  }
+
+  @include break-pc-tab {
+    &.is-col2 {}
+
+    &__item {
+      width: 32%;
+
+      .is-col2 & {
+        width: 47.5%;
+
+        &:nth-child(n+ 3) {
+          margin-top: 2em;
+        }
+      }
+
+      &:nth-child(n + 3) {
+        margin-top: 0;
+      }
+
+      &:nth-child(n + 4) {
+        margin-top: 1em;
+      }
+
+    }
+  }
+}

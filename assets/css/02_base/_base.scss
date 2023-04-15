@@ -1,0 +1,26 @@
+/*==================================================
+** outline
+==================================================*/
+
+
+* {
+  box-sizing: border-box;
+  // background-color: rgba(red, 0.1);
+}
+
+body {
+  color: #242424;
+  // background-color: $color-base;
+
+  @include break-pc-tab {}
+}
+
+a {
+  @include break-pc-tab {
+    transition: opacity .3s ease-in-out;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}

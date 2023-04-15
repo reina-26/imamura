@@ -1,0 +1,26 @@
+/*==================================================
+** c-sec02
+==================================================*/
+.c-sec02 {
+  border: 1px solid $color-sub;
+  border-radius: 10px;
+
+  &__txt {
+    margin-top: 1em;
+  }
+
+  @include break-pc-tab {
+
+    border-width: 3px;
+    border-radius: 20px;
+
+    &__item {
+      font-size: 1.8rem;
+    }
+
+    &__txt {
+      margin-top: 1.5em;
+      font-size: 1.8rem;
+    }
+  }
+}

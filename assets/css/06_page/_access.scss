@@ -1,0 +1,245 @@
+/*==================================================
+** access-map
+==================================================*/
+.access-map {
+  &__inner {
+    padding-top: 40px;
+  }
+
+  /*tabの形状*/
+  &__content {
+    height: 300px;
+  }
+
+  .tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+
+
+    @include break-pc-tab {
+      gap: 40px;
+    }
+  }
+
+  .tab li a {
+    display: block;
+    background: rgba(239, 240, 210, .3);
+    margin: 0 2px;
+    padding: 10px 20px;
+  }
+
+  /*liにactiveクラスがついた時の形状*/
+  .tab li.active a {
+    background: $color-sub;
+  }
+
+
+  /*エリアの表示非表示と形状*/
+  .area {
+    display: none;
+    /*はじめは非表示*/
+    opacity: 0;
+    /*透過0*/
+    background: $color-sub;
+    padding: 1em;
+
+    @include break-pc-tab {
+      padding: 20px;
+    }
+  }
+
+  /*areaにis-activeというクラスがついた時の形状*/
+  .area.is-active {
+    display: block;
+    /*表示*/
+    animation-name: displayAnime;
+    /*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes displayAnime {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @include break-pc-tab {
+    &__inner {
+      padding-top: 170px;
+      max-width: 1300px !important;
+    }
+
+    &__content {
+      height: 600px;
+    }
+  }
+}
+
+
+/*==================================================
+** access-info
+==================================================*/
+.access-info {
+  background-image: url(../images/common/sp/bg_footer01.png);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__inner {
+    padding-top: 40px;
+  }
+
+  &__map {
+    margin-top: 40px;
+    height: 300px;
+
+    iframe {
+      border-radius: 25px;
+
+    }
+  }
+
+  &__content {}
+
+  &__head {
+    width: 200px;
+    margin: 25px auto 0;
+  }
+
+  &__areatxt {
+    font-size: 1.6rem;
+    letter-spacing: 0.05em;
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  &__head {
+    font-size: 1.8rem;
+  }
+
+  &__address {
+    margin-top: 1em;
+    font-style: normal;
+  }
+
+  &__route {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  &-check {
+    margin-top: 0.5em;
+  }
+
+  @include break-pc-tab {
+    background-image: url(../images/common/bg_footer01.png);
+
+    &__inner {
+      padding-top: 100px;
+    }
+
+    &__map {
+      height: 600px;
+
+      iframe {
+        border-radius: 50px;
+
+      }
+    }
+
+    &__content {
+      margin-top: 60px;
+      display: flex;
+      gap: 80px;
+      justify-content: center;
+      // flex-direction: column;
+      // align-items: center;
+    }
+
+    &__areatxt {
+      font-size: 1.8rem;
+      text-align: start;
+      margin-top: 2em;
+    }
+
+    &__head {
+      width: 250px;
+      margin: 0;
+    }
+
+    &__head {
+      font-size: 2.2rem;
+    }
+
+    &__address {
+      margin-top: 1.5em;
+    }
+
+    &__route {
+      font-size: 1.6rem;
+    }
+
+    &-info {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+/*==================================================
+** access-banner
+==================================================*/
+.access-banner {
+  &__inner {
+    padding-top: 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    &+& {
+      margin-top: 1em;
+    }
+  }
+
+  @include break-pc-tab {
+    &__inner {
+      max-width: 1000px !important;
+      padding-top: 200px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    &__item {
+      width: 47%;
+
+      &+& {
+        margin-top: 0;
+      }
+    }
+
+
+    a {
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}

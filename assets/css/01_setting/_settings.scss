@@ -1,0 +1,223 @@
+// scss index
+//
+// colors
+// -- sns
+// original
+//
+
+
+
+// colors
+$color-txt: #535353;
+
+// Examples
+$color-main: #b64400;
+$color-sub: #eff0d2;
+$color-accent01: #d9a369;
+$color-accent02: #cecece;
+$color-accent03: #fdcd00;
+
+$color-accent: #805e79;
+$color-accent-red: #7d1a1e;
+
+$color-base: #fffff0;
+$color-base02: #fffff0;
+
+// -- sns
+$color-facebook: #3b5998;
+$color-twitter: #55acee;
+$color-google: #dd4b39;
+$color-hatena: #008fde;
+$color-line: #00b900;
+
+// fonts
+$font-go: "Hiragino Kaku Gothic ProN", YuGothic, "Yu Gothic", "游ゴシック体", "游ゴシック", "メイリオ", "Hiragino Sans", sans-serif;
+/* デザインに合わせて変更する */
+$font-mei: "游明朝",
+  YuMincho,
+  "Hiragino Mincho ProN W3",
+  "ヒラギノ明朝 ProN W3",
+  "Hiragino Mincho ProN",
+  "HG明朝E",
+  "ＭＳ Ｐ明朝",
+  "ＭＳ 明朝",
+  serif;
+
+// original
+@font-face {
+  font-family: 'tanu';
+  // src: url('../webfonts/tanu.otf') format('woff');
+}
+
+@mixin tanu {
+  font-family: 'tanu';
+}
+
+@mixin orignal-expamle {
+  color: red;
+}
+
+@mixin flex-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin form-txt-reset {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+}
+
+@mixin form-txtarea-reset {
+  appearance: none;
+  resize: none;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+@mixin overflow-line {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+@mixin overflow-lines($row: 3) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $row;
+  text-overflow: ellipsis;
+}
+
+@mixin img-aspect-fit($w, $h) {
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: ($h / $w) * 100%;
+  }
+
+  >img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  >iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  >video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@mixin before ($w, $h, ) {
+  position: relative;
+
+  &:before {
+    content: "";
+    background-size: contain;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    width: $w;
+    height: $h;
+  }
+}
+
+//breakpoint
+//breakpoint
+// $break-tab: 960px;
+$break-pc: 960px;
+
+// -- three point
+// pcのみ
+// @mixin break-lpc {
+//   @media screen and (min-width: 1920px) {
+//     @content;
+//   }
+// }
+
+@mixin break-pc {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+// pcとtab共通
+@mixin break-pc-tab {
+  @media screen and (min-width: 961px) {
+    @content;
+  }
+}
+
+// tabとsp共通
+// @mixin break-tab-sp {
+//   @media screen and (max-width: 1023px) {
+//     @content;
+//   }
+// }
+// tabのみ
+@mixin break-tab {
+  @media screen and (max-width: 1023px) and (min-width: 961px) {
+    @content;
+  }
+}
+
+// // large-spのみ
+// @mixin break-lsp {
+//   @media screen and (max-width: 1023px) and (min-width: 480px) {
+//     @content;
+//   }
+// }
+// spのみ
+@mixin break-sp {
+  @media screen and (max-width: 960px) {
+    @content;
+  }
+}
+
+// small-spのみ
+// @mixin break-ssp {
+//   @media screen and (max-width: 374px) {
+//     @content;
+//   }
+// }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+@include break-pc-tab {
+  a[href*="tel:"] {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+  }
+}

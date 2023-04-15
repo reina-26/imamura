@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+
+@import "01_setting/settings";
+
+
+
+
+
+@import "05_helper/times";
+
+@import "03_layout/content";
+@import "03_layout/header";
+@import "03_layout/mv";
+@import "03_layout/gnav";
+@import "03_layout/main";
+@import "03_layout/footer";
+
+
+@import "04_component/kv";
+@import "04_component/banner";
+@import "04_component/sec01";
+@import "04_component/to-top";
+@import "04_component/head01";
+@import "04_component/head02";
+@import "04_component/head03";
+@import "04_component/head04";
+@import "04_component/head05";
+@import "04_component/btn01";
+@import "04_component/list01";
+@import "04_component/list02";
+@import "04_component/sec02";
+@import "04_component/link01";
+@import "04_component/anchor01";
+// @import "04_component/ticatica";
+
+@import "06_page/top";
+@import "06_page/cuisine";
+@import "06_page/facility";
+@import "06_page/access";
+@import "06_page/news";
+@import "06_page/spa";
+@import "06_page/price";
+
+
+
+@import "07_utility/utility";
+@import "02_base/base";
+
+body,
+header,
+main,
+footer {
+	// min-width: 1200px;
+}
+
+// @media screen and (max-width : 750px){
+//   body,header,main,footer{
+//     min-width:750px;
+//     max-width:750px;
+//     width:100%;
+//  }
+// }

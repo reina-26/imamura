@@ -1,0 +1,40 @@
+.c-link01 {
+  width: 75px;
+  height: 75px;
+  background-color: $color-accent03;
+  color: #fff;
+  display: block;
+  @include tanu;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__ico {
+    width: 36px;
+    display: block;
+  }
+
+  @include break-pc-tab {
+    width: 110px;
+    height: 110px;
+    font-size: 2.2rem;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      transform: rotate(360deg);
+    }
+
+    &__ico {
+      width: 47px;
+      height: 45px;
+      text-align: center;
+    }
+
+    &__txt {
+      margin-top: -14px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.c-head04 {
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  font-size: 2rem;
+  padding-bottom: 20px;
+  position: relative;
+  text-align: center;
+  &:after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #a2a2a2;
+  }
+  @include break-pc-tab {
+    font-size: 4rem;
+    padding-bottom: 28px;
+    &:after {
+      width: 65px;
+    }
+  }
+}

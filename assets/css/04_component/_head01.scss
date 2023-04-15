@@ -1,0 +1,64 @@
+/*==================================================
+** c-head01
+==================================================*/
+.c-head01 {
+  text-align: center;
+  font-size: clamp(2rem, 2.5vw, 3.5rem);
+  position: relative;
+  padding-bottom: 0.7em;
+  font-family: $font-mei;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 1px;
+    background-color: $color-main;
+    display: inline-block;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+
+  &-in {
+    position: relative;
+    display: inline-block;
+
+  }
+
+  &.is-left {
+    text-align: start;
+
+    &:before {
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+
+  @include break-pc-tab {
+    letter-spacing: 0.1em;
+
+    &:before {
+      height: 2px;
+    }
+
+    &-in {
+
+
+      &:before {
+        width: 60px;
+        height: 35px;
+        left: -75px;
+      }
+
+      &:after {
+        width: 60px;
+        height: 35px;
+        margin-left: 0.5em;
+      }
+    }
+  }
+}

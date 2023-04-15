@@ -1,0 +1,171 @@
+/*==================================================
+** spa-attr
+==================================================*/
+
+.spa-attr {
+  position: relative;
+  height: 256vw; //960px
+  margin-top: 35px;
+
+  &:before {
+    content: "";
+    background-image: url(../images/spa/sp/bg_attr01.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    z-index: -1;
+    background-size: contain;
+    width: 100vw; //375px
+    height: 256vw; //932px
+    display: inline-block;
+  }
+
+  &__inner {
+    padding-top: 50px;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  &__movie {
+    text-align: center;
+
+    video {
+      width: 100%;
+
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding: 0 2em;
+  }
+
+  &__img {
+    position: absolute;
+
+    &.is-big {
+      width: 61.333vw; //215px
+    }
+
+    &.is-min {
+      width: 26.9333vw; //101px
+    }
+  }
+
+  &__img01 {
+    top: 65.333vw; //245px
+    left: -5.8666vw; //-22px
+  }
+
+  &__img02 {
+    top: 69.3333vw; //260px
+    right: 10.9333vw; //41px
+  }
+
+  &__img03 {
+    top: 120vw; //450px
+    right: -10.4vw; //-39px
+  }
+
+  &__img04 {
+    top: 150.666vw; //565px
+    left: 15.46vw; //58px
+  }
+
+  &__img05 {
+    top: 185.06vw; //694px
+    left: -1.33333vw; //-5px
+  }
+
+  &__img06 {
+    top: 192vw; //720px
+    right: 6.4vw; //24px
+  }
+
+  &__img07 {
+    top: 228vw; //855px
+    right: 2.666vw; //10px
+  }
+
+  @include break-pc-tab {
+    height: 101.5625vw; //1950px
+    margin-top: 25px;
+    margin-bottom: 200px;
+
+    &:before {
+      background-image: url(../images/spa/bg_attr01.png);
+      width: 100vw; //1920px
+      height: 101.5625vw; //1865px
+      top: 8.125vw; //156px
+    }
+
+    &__inner {
+      padding-top: 100px;
+      max-width: 1700px !important;
+      width: 88% !important;
+    }
+
+    &__head {
+      &-in {
+        font-size: 4rem;
+      }
+    }
+
+    &__content {
+      padding: 0;
+    }
+
+    &__movie {
+      width: 41.6%; //800px
+      margin: 0 auto;
+    }
+
+    &__img {
+      &.is-big {
+        width: 35.5vw; //682px
+      }
+
+      &.is-min {
+        width: 16.14vw; //310px
+      }
+    }
+
+    &__img01 {
+      top: 27.34vw; //525px
+      left: 2.083vw; //40px
+    }
+
+    &__img02 {
+      top: 51.45vw; //988px
+      left: 29.53vw; //567px
+      right: auto;
+    }
+
+    &__img03 {
+      top: 37.7vw; //724px
+      right: 4.635vw; //89px
+    }
+
+    &__img04 {
+      top: 30.98vw; //595px
+      left: 42.96vw; //825px
+    }
+
+    &__img05 {
+      top: 67.39vw; //1294px
+      right: 37.03vw; //711px
+      left: auto;
+    }
+
+    &__img06 {
+      top: 81.09vw; //1557px
+      right: 24.375vw; //468px
+    }
+
+    &__img07 {
+      top: 72.96vw; //1401px
+      right: 3.802vw; //73px
+    }
+  }
+}

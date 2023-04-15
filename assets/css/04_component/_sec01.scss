@@ -1,0 +1,267 @@
+/*==================================================
+** c-sec01
+==================================================*/
+.c-sec01 {
+  position: relative;
+  background-image: url(../images/common/sp/bg_sec01.png);
+  background-position: bottom -70px left;
+  background-size: cover;
+
+  &__deco02 {
+    position: absolute;
+    right: -220px;
+    top: 0;
+    width: 400px;
+    animation: vertical 6s ease-in-out 1s infinite alternate;
+  }
+
+  &__deco03 {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    width: 320px;
+    animation: vertical 6s ease-in-out 1s infinite alternate;
+  }
+
+  &__inner {
+    // padding-top: 100px;
+    // padding-bottom: 50px;
+    // background-image: url(../images/top/bg_greeting02.png);
+    // background-position: bottom 5px right;
+    // background-repeat: no-repeat;
+    // background-size: 80%;
+    width: 88% !important;
+    padding-top: 2em;
+    padding-bottom: 6em;
+  }
+
+  &__txt {
+    margin-top: 4em;
+    line-height: 1.5;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    justify-content: flex-start;
+    margin-left: 1em;
+  }
+
+  &__img {
+    // margin: 0;
+    // width: 190px;
+    position: relative;
+    width: 30px;
+    transform: translateY(60px);
+
+    &:before {
+      content: "";
+      background-image: url(../images/top/bg_greeting01.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 45%;
+      left: -81%;
+      width: 337px;
+      height: 223px;
+      display: inline-block;
+      z-index: -1;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    &-main {
+      width: 30%;
+      transform: translateY(40px);
+    }
+  }
+
+  &__head {
+    // width: 45px;
+    writing-mode: vertical-lr;
+    font-family: $font-mei;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @include break-pc-tab {
+    background-image: none;
+
+    // padding-left: 400px;
+    &__deco01 {
+      position: absolute;
+      left: 120px;
+      top: 0;
+      width: 792px;
+      animation: vertical 6s ease-in-out 1s infinite alternate;
+    }
+
+    &__deco02 {
+      right: -220px;
+      top: 0;
+      width: auto;
+    }
+
+    &__deco03 {
+      right: 0px;
+      bottom: -20px;
+      width: auto;
+    }
+
+    &__inner {
+      padding-top: 5em;
+      padding-bottom: 10.5em;
+      // padding-top: 90px;
+      // background-image: none;
+    }
+
+    &__content {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    &__top {
+      display: contents;
+      justify-content: center;
+    }
+
+    &__img-main {
+      margin-top: 7em;
+    }
+
+    &__img {
+      // width: 381px;
+      margin-top: 2em;
+      width: auto;
+
+      &-main {
+        width: auto;
+      }
+
+      &:before {
+        width: 668px;
+        height: 425px;
+        top: 37%;
+        left: -59%;
+      }
+
+      img {
+        width: auto;
+      }
+    }
+
+    &__head {
+      // width: 90px;
+      font-size: 4rem;
+      // margin-top: 5em;
+    }
+
+    &__txt {
+      margin-top: 3em;
+      font-size: 2.2rem;
+      line-height: 2.7;
+      // width: 650px;
+      // margin-left: auto;
+      display: block;
+
+      &-bold {
+        font-weight: 700;
+      }
+
+      &-in01 {
+        margin-left: 1em;
+        display: inline-block;
+      }
+
+      &-in02 {
+        margin-left: 2em;
+      }
+
+      &-in03 {
+        margin-left: 1em;
+      }
+
+      &-in04 {
+        margin-left: 0;
+      }
+
+      &-in05 {
+        margin-left: -1em;
+      }
+
+      &-in06 {
+        margin-left: -2em;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) and (min-width: 961px) {
+    &__content {
+      gap: 35px;
+    }
+
+    &__head {
+      margin-left: 0;
+    }
+
+    &__txt {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@keyframes step01 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(-6px, -12px) rotate(-2deg);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  75% {
+    transform: translate(6px, -12px) rotate(2deg);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/*==================================================
+blur
+===================================*/
+
+.blur {
+  animation-name: blurAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blurAnime {
+  from {
+    filter: blur(10px);
+    transform: scale(1.02);
+    opacity: 0;
+  }
+
+  to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.blurTrigger {
+  opacity: 0;
+}

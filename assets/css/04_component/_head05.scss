@@ -1,0 +1,20 @@
+.bg01 {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-image: url(../images/common/sp/bg01.png);
+
+  @include break-pc-tab {
+    background-image: url(../images/common/bg01.png);
+  }
+}
+
+// .bg02 {
+//   background-image: url(../images/common/sp/bg01.png);
+//   background-position: bottom center;
+//   background-repeat: no-repeat;
+//   background-size: 100% auto;
+//   @include  break-pc-tab {
+//     background-image: url(../images/common/bg01.png);
+//   }
+// }

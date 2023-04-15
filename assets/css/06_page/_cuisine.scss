@@ -1,0 +1,472 @@
+/*==================================================
+** cuisine-attr
+==================================================*/
+.cuisine-attr {
+  position: relative;
+  height: 128vw; //480px
+  margin-top: 35px;
+
+
+  &:before {
+    content: "";
+    background-image: url(../images/cuisine/sp/bg_attr01.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-size: contain;
+    width: 100vw; //375px
+    height: 248.53vw; //932px
+    display: inline-block;
+  }
+
+  &__inner {
+    padding-top: 50px;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  &__txt {
+    color: $color-accent01;
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  &__content {
+    position: relative;
+    margin-top: -20px;
+  }
+
+  &__img {
+    position: absolute;
+
+    &.is-big {
+      width: 61.333vw; //215px
+    }
+
+    &.is-min {
+      width: 26.93vw; //101px
+    }
+  }
+
+  &__img01 {
+    top: 11.46vw; //43px
+    left: -9.333vw; //-35px
+  }
+
+  &__img02 {
+    top: 2.666vw; //10px
+    left: -7.4666vw; //-28px
+  }
+
+  &__img03 {
+    top: 9.333vw; //35px
+    right: 17.8666vw; //67px
+  }
+
+  &__img04 {
+    top: 47.73vw; //179px
+    right: -7.466vw; //-28px
+  }
+
+  &__img05 {
+    top: 3.2vw; //12px
+    right: -10.13vw; //-38px
+  }
+
+  &__img06 {
+    top: 27.73vw; //104px
+    right: 3.4666vw; //13px
+  }
+
+  &__img07 {
+    top: 54.666vw; //205px
+    right: 16.26vw; //61px
+    z-index: -1;
+  }
+
+  @include break-pc-tab {
+    height: 54.11vw; //1039px
+    margin-top: 185px; //185px
+
+    &:before {
+      background-image: url(../images/cuisine/bg_attr01.png);
+      width: 100vw; //1920px
+      height: 54.11vw; //1865px
+    }
+
+    &__inner {
+      padding-top: 100px; //100px
+      max-width: 1700px !important;
+      width: 88% !important;
+    }
+
+    &__head {
+      &-in {
+        font-size: 4rem;
+      }
+    }
+
+    &__txt {
+      font-size: 1.8rem;
+      line-height: 2.6;
+      margin-top: 1em;
+    }
+
+
+
+    &__img {
+      &.is-big {
+        width: 35.5vw; //682px
+      }
+
+      &.is-min {
+        width: 16.14vw; //310px
+      }
+    }
+
+    &__img01 {
+      top: 4.427vw; //85px
+      left: 3.3333vw; //64px
+    }
+
+    &__img02 {
+      top: 0px;
+      left: 5.3125vw; //102px
+    }
+
+    &__img03 {
+      top: 4.27vw; //82px
+      left: 33.07vw; //635px
+      right: auto;
+    }
+
+    &__img04 {
+      top: 16.4vw; //315px
+      left: 42.34vw; //813px
+      right: auto;
+    }
+
+    &__img05 {
+      top: 3.4375vw; //66px
+      right: 18.333vw; //352px
+    }
+
+    &__img05 {
+      top: 3.4375vw; //66px
+      right: 18.333vw; //352px
+    }
+
+    &__img06 {
+      top: 8.9583vw; //172px
+      right: 4.6875vw; //90px
+    }
+
+    &__img07 {
+      top: 24.32vw; //467px
+      right: 14.21vw; //273px
+      z-index: 0;
+    }
+  }
+}
+
+/*==================================================
+** cuisine-dinner
+==================================================*/
+.cuisine-dinner {
+  &__inner {
+    padding-top: 50px;
+  }
+
+  &__head {
+    color: $color-sub;
+    @include tanu;
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-size: 2rem;
+
+    &-in {
+      position: relative;
+      position: relative;
+
+      &:before {
+        content: "";
+        background-image: url(../images/common/img_leaf-left.png);
+        width: 30px;
+        height: 17px;
+        background-size: contain;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: -29px;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+      }
+
+      &:after {
+        content: "";
+        background-image: url(../images/common/img_leaf-right.png);
+        width: 30px;
+        height: 17px;
+        background-size: contain;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+      }
+
+    }
+
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__txt {
+    margin-top: 1em;
+    color: $color-accent01;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 32%;
+  }
+
+  &__deco {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 1em;
+
+    img {
+      animation: step01 2s ease-in-out infinite;
+
+    }
+  }
+
+  &__img-main {
+    margin-top: 1em;
+  }
+
+  &__list {
+    margin-top: 1em;
+  }
+
+  @include break-pc-tab {
+    &__inner {
+      padding-top: 200px;
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &-in {
+        width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+      }
+    }
+
+    &__img-main {
+      width: 52.9%; //900px
+    }
+
+    &__content-in {
+      width: 44%;
+    }
+
+    &__areatxt {}
+
+    &__head {
+      font-size: 4rem;
+
+      &-in {
+        &:before {
+          width: 60px;
+          height: 35px;
+          left: -60px;
+        }
+
+        &:after {
+          width: 60px;
+          height: 35px;
+        }
+      }
+    }
+
+    &__txt {
+      font-size: 1.8rem;
+      line-height: 2.1;
+      padding: 0 6em;
+      margin-top: 2em;
+    }
+
+    &__deco {
+      width: 300px;
+      margin-top: 2em;
+    }
+
+    &__list {
+      margin-top: 2em;
+    }
+  }
+
+  @media screen and (max-width: 1300px) and (min-width: 961px) {
+    &__txt {
+      padding: 0 1em;
+      margin-top: 1em;
+    }
+  }
+}
+
+/*==================================================
+** cuisine-break
+==================================================*/
+.cuisine-break {
+  &__inner {
+    padding-top: 50px;
+  }
+
+  &__head {
+    color: $color-sub;
+    @include tanu;
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-size: 2rem;
+
+    &-in {
+      position: relative;
+      position: relative;
+
+      &:before {
+        content: "";
+        background-image: url(../images/common/img_leaf-left.png);
+        width: 30px;
+        height: 17px;
+        background-size: contain;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: -29px;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+      }
+
+      &:after {
+        content: "";
+        background-image: url(../images/common/img_leaf-right.png);
+        width: 30px;
+        height: 17px;
+        background-size: contain;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+      }
+
+    }
+
+  }
+
+  &__txt {
+    margin-top: 1em;
+    color: $color-accent01;
+  }
+
+  &__deco {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+
+    img {
+      animation: step01 2s ease-in-out infinite;
+
+    }
+  }
+
+  &__img-main {
+    margin-top: 1em;
+  }
+
+  @include break-pc-tab {
+    &__inner {
+      padding-top: 200px;
+      padding-bottom: 100px;
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &-in {
+        width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+      }
+    }
+
+    &__img-main {
+      width: 52.9%; //900px
+    }
+
+    &__areatxt {
+      width: 44%;
+    }
+
+    &__head {
+      font-size: 4rem;
+
+      &-in {
+        &:before {
+          width: 60px;
+          height: 35px;
+          left: -60px;
+        }
+
+        &:after {
+          width: 60px;
+          height: 35px;
+        }
+      }
+    }
+
+    &__txt {
+      font-size: 1.8rem;
+      line-height: 2.1;
+      padding: 0 6em;
+      margin-right: 2em;
+    }
+
+    &__deco {
+      width: 300px;
+      margin-top: 2em;
+    }
+  }
+
+  @media screen and (max-width: 1300px) and (min-width: 961px) {
+    &__txt {
+      padding: 0 1em;
+      margin-top: 1em;
+    }
+  }
+}

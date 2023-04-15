@@ -1,0 +1,102 @@
+.c-head03 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // position: relative;
+  &:after {
+    content: "";
+    background-image: url(../images/common/bg_head02.png);
+    background-size: contain;
+    display: inline-block;
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 80px;
+    z-index: -1;
+  }
+  &.is-access {
+    &:after {
+      bottom: 0px;
+    }
+  }
+  &__head {
+    &-ja {
+      color: #fff;
+      font-weight: 400;
+      writing-mode: vertical-rl;
+      font-size: 2.5rem;
+      letter-spacing: 0.2em;
+      &.is-access {
+        font-size: 2.4rem;
+      }
+    }
+    &-en {
+      color: #fff;
+      font-weight: 400;
+      font-size: 1.4rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-family: $font-mei;
+    }
+  }
+  @include break-pc-tab {
+    &:after {
+      content: "";
+      bottom: -230px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 240px;
+      height: 283px;
+    }
+    &.is-access {
+      &:after {
+        bottom: -210px;
+      }
+    }
+    &__head {
+      &-ja {
+        font-size: 5rem;
+        &.is-access {
+          font-size: 5rem;
+        }
+      }
+      &-en {
+        margin-top: 0.3em;
+        font-size: 2.4rem;
+      }
+    }
+  }
+  @media screen and (max-width: 1300px) and (min-width: 961px) {
+    &:after {
+      content: "";
+      bottom: -11.9vw;//-230px
+      left: 50%;
+      transform: translateX(-50%);
+      width: 12.5vw;//240px
+      height: 14.73vw;//283px
+    }
+    &__head {
+      &-ja {
+        font-size: 2.6vw;//50px
+        &.is-access {
+          font-size: 2.6vw;
+        }
+      }
+      &-en {
+        margin-top: 0.3em;
+        font-size: 1.25vw;//24px
+      }
+    }
+  }
+  @media screen and (max-width: 1800px) and (min-width: 961px) {
+    &.is-access {
+      &:after {
+        bottom: -7.9vw;
+      }
+    }
+  }
+}

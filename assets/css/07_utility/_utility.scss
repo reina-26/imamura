@@ -1,0 +1,81 @@
+@include break-sp {
+  .sp-none {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1119px) {
+  .lsp-none {
+    display: none;
+  }
+}
+
+@include break-tab {
+  .tab-none {
+    display: none;
+  }
+}
+
+@include break-pc {
+  .pc-none {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .lpc-none {
+    display: none;
+  }
+}
+
+
+
+/*==================================================
+** color
+==================================================*/
+
+.color__ac {
+  color: $color-accent;
+}
+
+.color__ac-red {
+  color: $color-accent-red;
+}
+
+.color__sub {
+  color: $color-sub;
+}
+
+.screen-reader-text {
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+/*==================================================
+** inner
+==================================================*/
+.u-inner {
+  width: 88%;
+  max-width: 600px;
+  margin: 0 auto;
+
+  @include break-pc-tab {
+    max-width: 1700px;
+  }
+}
+
+/*==================================================
+** bg
+==================================================*/
+.u-bg-pink-light {
+  background-image: url(../images/common/bg02.jpg);
+  background-size: cover;
+}
+
+.u-bg-yellow {
+  background-color: $color-base02;
+}
