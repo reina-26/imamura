@@ -125,10 +125,16 @@
   }
 
   @include break-pc-tab {
+    &.is-cuisine {}
+
     &__inner {
       max-width: 1300px !important;
       padding-top: 0;
       padding-bottom: 0;
+
+      &.is-cuisine {
+        max-width: 1000px !important;
+      }
     }
 
     &__content {
@@ -139,10 +145,20 @@
       justify-content: space-between;
       // max-width: 1180px;
       margin: 0 auto;
+
+      &.is-cuisine {
+        padding: 6em 3.5em;
+        background-image: url(../images/cuisine/bg_bath01.png);
+        background-position: bottom right;
+      }
     }
 
     &__areatxt {
       width: 35%;
+
+      &.is-cuisine {
+        width: 100%;
+      }
     }
 
     &__areaimg {

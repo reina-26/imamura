@@ -81,8 +81,12 @@
 
   &__head {
     // width: 45px;
-    writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
     font-family: $font-mei;
+
+    &-in {
+      margin-top: 1.5em;
+    }
 
     img {
       width: 100%;

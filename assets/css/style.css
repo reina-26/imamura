@@ -1546,10 +1546,14 @@ body.appear #container {
 }
 
 .c-sec01__head {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.c-sec01__head-in {
+  margin-top: 1.5em;
 }
 
 .c-sec01__head img {
@@ -2315,6 +2319,22 @@ blur
   background: #b64400;
 }
 
+.c-list01-bottom__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+}
+
+.c-list01-bottom__item {
+  width: 49%;
+}
+
 @media screen and (min-width: 961px) {
   .c-list01 {
     max-width: 1300px;
@@ -2352,14 +2372,20 @@ blur
     content: url(../images/facility/bg_attr01.png);
     position: absolute;
     bottom: -150px;
-    right: -200px;
+    right: -310px;
     z-index: -1;
   }
   .c-list01__areaimg-wrap.is-left:after {
     content: url(../images/facility/bg_attr02.png);
     position: absolute;
     right: auto;
-    left: -200px;
+    left: -310px;
+  }
+  .c-list01__deco {
+    position: absolute;
+    top: 10%;
+    left: -3.5%;
+    z-index: 2;
   }
   .c-list01__img-sub {
     position: absolute;
@@ -2401,6 +2427,14 @@ blur
   .c-list01-table__txt {
     width: 65%;
   }
+}
+
+.c-list01-bottom__list {
+  margin-top: 230px;
+}
+
+.c-list01-bottom__item {
+  width: 24%;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 961px) {
@@ -4198,6 +4232,9 @@ blur
     padding-top: 0;
     padding-bottom: 0;
   }
+  .facility-bath__inner.is-cuisine {
+    max-width: 1000px !important;
+  }
   .facility-bath__content {
     border-width: 3px;
     display: -webkit-box;
@@ -4210,8 +4247,16 @@ blur
             justify-content: space-between;
     margin: 0 auto;
   }
+  .facility-bath__content.is-cuisine {
+    padding: 6em 3.5em;
+    background-image: url(../images/cuisine/bg_bath01.png);
+    background-position: bottom right;
+  }
   .facility-bath__areatxt {
     width: 35%;
+  }
+  .facility-bath__areatxt.is-cuisine {
+    width: 100%;
   }
   .facility-bath__areaimg {
     display: -webkit-box;

@@ -122,6 +122,18 @@
     background: $color-main;
   }
 
+  &-bottom {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 100px;
+    }
+
+    &__item {
+      width: 49%;
+    }
+  }
 
   @include break-pc-tab {
     max-width: 1300px;
@@ -143,6 +155,7 @@
 
     &__areaimg {
 
+
       &-wrap {
         width: 65%;
         position: relative;
@@ -155,7 +168,7 @@
           content: url(../images/facility/bg_attr01.png);
           position: absolute;
           bottom: -150px;
-          right: -200px;
+          right: -310px;
           z-index: -1;
         }
 
@@ -164,10 +177,17 @@
             content: url(../images/facility/bg_attr02.png);
             position: absolute;
             right: auto;
-            left: -200px;
+            left: -310px;
           }
         }
       }
+    }
+
+    &__deco {
+      position: absolute;
+      top: 10%;
+      left: -3.5%;
+      z-index: 2;
     }
 
     &__img-sub {
@@ -215,6 +235,16 @@
       &__txt {
         width: 65%;
       }
+    }
+  }
+
+  &-bottom {
+    &__list {
+      margin-top: 230px;
+    }
+
+    &__item {
+      width: 24%;
     }
   }
 
