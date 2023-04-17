@@ -145,10 +145,12 @@
       justify-content: space-between;
       // max-width: 1180px;
       margin: 0 auto;
+      background-image: url(../images/facility/bg_bath01.png);
+      background-position: bottom center;
 
       &.is-cuisine {
-        padding: 6em 3.5em;
         background-image: url(../images/cuisine/bg_bath01.png);
+        padding: 6em 3.5em;
         background-position: bottom right;
       }
     }
@@ -165,6 +167,13 @@
       display: flex;
       gap: 10px;
       width: 50%;
+      position: relative;
+    }
+
+    &__deco {
+      position: absolute;
+      top: 0;
+      left: -5%;
     }
 
     &__txt {

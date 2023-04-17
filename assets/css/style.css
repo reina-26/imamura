@@ -4246,10 +4246,12 @@ blur
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 0 auto;
+    background-image: url(../images/facility/bg_bath01.png);
+    background-position: bottom center;
   }
   .facility-bath__content.is-cuisine {
-    padding: 6em 3.5em;
     background-image: url(../images/cuisine/bg_bath01.png);
+    padding: 6em 3.5em;
     background-position: bottom right;
   }
   .facility-bath__areatxt {
@@ -4264,6 +4266,12 @@ blur
     display: flex;
     gap: 10px;
     width: 50%;
+    position: relative;
+  }
+  .facility-bath__deco {
+    position: absolute;
+    top: 0;
+    left: -5%;
   }
   .facility-bath__txt {
     margin-top: 1.5em;
