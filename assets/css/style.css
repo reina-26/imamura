@@ -1622,11 +1622,16 @@ body.appear #container {
   }
   .c-sec01__head {
     font-size: 4rem;
+    letter-spacing: 0.3em;
   }
   .c-sec01__txt {
     margin-top: 3em;
     font-size: 2.2rem;
     line-height: 2.7;
+    display: block;
+  }
+  .c-sec01__txt-sub {
+    margin-top: 2em;
     display: block;
   }
   .c-sec01__txt-bold {
@@ -2328,11 +2333,15 @@ blur
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 .c-list01-bottom__item {
   width: 49%;
+}
+
+.c-list01-bottom__item:nth-child(n + 3) {
+  margin-top: 7px;
 }
 
 @media screen and (min-width: 961px) {
@@ -2400,7 +2409,7 @@ blur
     bottom: -24%;
   }
   .c-list01__areatxt {
-    padding-top: 0;
+    padding-top: 4%;
     width: 30%;
     padding-right: 0;
     padding-left: 0;
@@ -2427,14 +2436,15 @@ blur
   .c-list01-table__txt {
     width: 65%;
   }
-}
-
-.c-list01-bottom__list {
-  margin-top: 230px;
-}
-
-.c-list01-bottom__item {
-  width: 24%;
+  .c-list01-bottom__list {
+    margin-top: 230px;
+  }
+  .c-list01-bottom__item {
+    width: 24%;
+  }
+  .c-list01-bottom__item:nth-child(n + 3) {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 961px) {
@@ -3656,7 +3666,8 @@ blur
 ==================================================*/
 @media screen and (min-width: 961px) {
   .cuisine-greeting__inner {
-    padding-top: 200px;
+    padding-top: 170px;
+    padding-bottom: 0;
   }
 }
 
@@ -4138,13 +4149,16 @@ blur
 ** facility-attr
 ==================================================*/
 .facility-attr__inner {
-  padding-top: 50px;
   width: 100% !important;
+}
+
+.facility-attr__list {
+  margin-top: 0;
 }
 
 @media screen and (min-width: 961px) {
   .facility-attr__inner {
-    padding-top: 150px;
+    padding-top: 200px;
     max-width: 1700px !important;
     width: 88% !important;
   }
@@ -4210,6 +4224,10 @@ blur
 /*==================================================
 ** facility-bath
 ==================================================*/
+.facility-bath {
+  margin-top: 40px;
+}
+
 .facility-bath__inner {
   padding-top: 40px;
   padding-bottom: 40px;

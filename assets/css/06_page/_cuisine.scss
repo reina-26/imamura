@@ -4,7 +4,8 @@
 .cuisine-greeting {
   @include break-pc-tab {
     &__inner {
-      padding-top: 200px;
+      padding-top: 170px;
+      padding-bottom: 0;
     }
   }
 }

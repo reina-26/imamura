@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./assets/css/02_base/initialize.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="./assets/rss/jquery-ui.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="./assets/css/02_base/orellax.min.css">
   <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
   <title>お食事・サービス | 今村旅館【公式サイト】</title>
@@ -103,7 +102,7 @@
               素朴な日替わりの家庭料理をご提供。<br>
               豪華な会席料理ではありませんが、まごころのおいしい料理をご提供いたします。<br>
               出張続きでコンビニご飯に飽きた人などに好評いただいております。<br>
-              ※当館では、夕食の提供はございません。朝食のみご用意させていただきます。
+              <span class="c-sec01__txt-sub">※当館では、夕食の提供はございません。朝食のみご用意させていただきます。</span>
             </p>
           </div>
         </div>
@@ -113,7 +112,7 @@
       ================================================ -->
       <section class="facility-attr">
         <div class="facility-attr__inner u-inner">
-          <ul class="c-list01">
+          <ul class="c-list01 facility-attr__list">
             <li class="c-list01__item">
               <div class="c-list01__areatxt">
                 <h3 class="c-head01 c-list01__head is-left">日替わりの朝食</h3>
@@ -124,7 +123,7 @@
                   美味しいご飯をたっぷり食べて、お仕事に観光に元気にいってらっしゃいませ♪
                 </p>
               </div>
-              <div class="c-list01__areaimg-wrap">
+              <div class="c-list01__areaimg-wrap is-noslider">
                 <span class="c-list01__deco sp-none"><img src="./assets/images/common/img_deco.png" alt=""></span>
                 <ul class="c-list01__areaimg">
                   <li class="c-list01__img">
@@ -219,41 +218,6 @@
   </div>
   <script src="./assets/js/jquery-1.11.3.min.js"></script>
   <script src="./assets/js/orellax.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./assets/js/main.js"></script>
-  <script>
-    $('.c-list01-slider').slick({
-      fade: true,//切り替えをフェードで行う。初期値はfalse。
-      autoplay: true,//自動的に動き出すか。初期値はfalse。
-      autoplaySpeed: 3000,//次のスライドに切り替わる待ち時間
-      speed: 1500,//スライドの動きのスピード。初期値は300。
-      infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-      slidesToShow: 1,//スライドを画面に3枚見せる
-      slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
-      arrows: false,//左右の矢印あり
-      prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
-      nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
-      dots: true,//下部ドットナビゲーションの表示
-      pauseOnFocus: false,//フォーカスで一時停止を無効
-      pauseOnHover: false,//マウスホバーで一時停止を無効
-      pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
-    });
-    $('.c-list02-slider').slick({
-      fade: true,//切り替えをフェードで行う。初期値はfalse。
-      autoplay: true,//自動的に動き出すか。初期値はfalse。
-      autoplaySpeed: 3000,//次のスライドに切り替わる待ち時間
-      speed: 1500,//スライドの動きのスピード。初期値は300。
-      infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-      slidesToShow: 1,//スライドを画面に3枚見せる
-      slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
-      arrows: false,//左右の矢印あり
-      prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
-      nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
-      dots: true,//下部ドットナビゲーションの表示
-      pauseOnFocus: false,//フォーカスで一時停止を無効
-      pauseOnHover: false,//マウスホバーで一時停止を無効
-      pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
-    });
-  </script>
 </body>
 </html>
